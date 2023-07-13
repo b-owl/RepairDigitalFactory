@@ -1,0 +1,6 @@
+.TeamMemberBox {
+  transition: 0.5s;
+}
+.TeamMemberContainer:hover .TeamMemberBox {
+  bottom: 0;
+}

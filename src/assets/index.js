@@ -1,0 +1,36 @@
+export { default as Logo } from "./images/logo.png";
+export { default as Banner1 } from "./images/banner1.png";
+export { default as Banner2 } from "./images/banner2.png";
+export { default as SectionBg } from "./images/section-bg.png";
+export { default as BookTimePic } from "./images/BookTime.png";
+export { default as WhyChoseUs } from "./images/why-choose-img.png";
+export { default as TeamMember1 } from "./images/team-1.jpg";
+export { default as TeamMember2 } from "./images/team-2.jpg";
+export { default as TeamMember3 } from "./images/team-3.jpg";
+export { default as TeamMember4 } from "./images/team-4.jpg";
+export { default as commentPic1 } from "./images/comment1.jpg";
+export { default as commentPic2 } from "./images/comment2.jpg";
+export { default as commentPic3 } from "./images/comment3.jpg";
+
+export { default as InstagramIcon } from "./icons/instagram-icon.png";
+export { default as TelegramIcon } from "./icons/telegram-icon.png";
+export { default as WhatsappIcon } from "./icons/whatsapp-icon.png";
+export { default as Cancel } from "./icons/cancel.png";
+export { default as MenuIcon } from "./icons/menu-icon.png";
+export { default as SearchIcon } from "./icons/search-icon.png";
+export { default as ContactIcon } from "./icons/contact-icon.png";
+export { default as quoteIcon } from "./icons/quote-icon.png";
+
+export { default as service1 } from "./icons/service-1.svg";
+export { default as service2 } from "./icons/service-2.svg";
+export { default as service3 } from "./icons/service-3.svg";
+export { default as service4 } from "./icons/service-4.svg";
+export { default as service5 } from "./icons/service-5.svg";
+export { default as service6 } from "./icons/service-6.svg";
+export { default as FunFact1 } from "./icons/fun-fact-icon-1.svg";
+export { default as FunFact2 } from "./icons/fun-fact-icon-2.svg";
+export { default as FunFact3 } from "./icons/fun-fact-icon-3.svg";
+export { default as FunFact4 } from "./icons/fun-fact-icon-4.svg";
+export { default as WhyChoseUs1 } from "./icons/why-choose-icon-1.svg";
+export { default as WhyChoseUs2 } from "./icons/why-choose-icon-2.svg";
+export { default as WhyChoseUs3 } from "./icons/why-choose-icon-3.svg";

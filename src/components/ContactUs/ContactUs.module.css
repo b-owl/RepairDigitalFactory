@@ -1,0 +1,13 @@
+.contactUs--container {
+  transition: 0.5s all;
+}
+.contactUs--box {
+  transform: translateX(-100%);
+  animation: contactUs 0.5s ease-in-out forwards;
+}
+@keyframes contactUs {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

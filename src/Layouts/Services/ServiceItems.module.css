@@ -1,0 +1,12 @@
+.ServiceContainer {
+  height: 96vh;
+}
+.ServiceContainerActive {
+  height: auto;
+  padding-bottom: 0 !important;
+}
+@media only screen and (max-width: 800px) {
+  .ServiceContainer {
+    height: 180vh;
+  }
+}
