@@ -13,7 +13,7 @@ import { IntroduceData } from "../../assets/dummy";
 
 const Introduce = () => {
   return (
-    <section className="mt-10 text-txt-color lg:px-20">
+    <section className="mt-10  text-txt-color lg:px-20">
       <Swiper
         modules={[EffectFade, Navigation, Autoplay, A11y]}
         autoplay={{
