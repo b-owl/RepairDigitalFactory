@@ -5,11 +5,15 @@ import Styles from "./Search.module.css";
 import { Cancel } from "../../assets";
 
 const Search = () => {
-  const { setActiveSearch } = UseStateContext();
+  const { setActiveSearch, ActiveSearch } = UseStateContext();
 
   return createPortal(
     <section
-      className={`${Styles["search--container"]}
+      className={`${
+        ActiveSearch == false
+          ? Styles["search--container"]
+          : Styles["search--container-show"]
+      }
     flex items-center justify-center bg-[#000000e6] w-full h-full fixed top-0 left-0 z-50`}
     >
       <button
@@ -19,7 +23,7 @@ const Search = () => {
         }}
       >
         <img
-          className="w-10 hover:rotate-180 transition-transform"
+          className="w-10 transition-transform hover:rotate-180"
           src={Cancel}
           alt=""
         />

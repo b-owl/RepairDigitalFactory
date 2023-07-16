@@ -6,6 +6,7 @@ import "swiper/css/autoplay";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCube, Autoplay } from "swiper/modules";
 import { AboutData, AboutDataSwiper } from "../../assets/dummy";
+import AboutUsSwiperItem from "./AboutUsSwiperItem";
 
 const AboutUs = () => {
   return (
@@ -17,9 +18,9 @@ const AboutUs = () => {
         <div className="basis-1/2 ">
           <h1 className="relative text-2xl font-bold md:text-3xl lg:text-4xl mb-14">
             <span className="absolute rounded-full -top-4 -right-4 w-14 h-14 bg-second-color "></span>
-            <p className="relative z-10 ">{AboutData.title}</p>
+            <p className="relative z-10 font-TitrPlus">{AboutData.title}</p>
           </h1>
-          <p className="mt-6 text-sm leading-7 lg:text-base">
+          <p className="mt-6 text-sm leading-7 lg:text-base text-slate-400">
             {AboutData.description}
           </p>
         </div>
@@ -45,18 +46,7 @@ const AboutUs = () => {
             {AboutDataSwiper.map((item, idx) => {
               return (
                 <SwiperSlide key={idx}>
-                  <div
-                    style={{ border: "0.6px solid snow" }}
-                    className={`
-                    ${item.bgColor} relative p-10 leading-loose text-center h-auto lg:h-72 lg:w-96 flex flex-col gap-8
-                    `}
-                  >
-                    <h1 className="text-xl font-bold">{item.title}</h1>
-                    <p className="text-sm">{item.description}</p>
-                    <button className="font-bold hover:text-red-500">
-                      بیشتر بخوانید
-                    </button>
-                  </div>
+                  <AboutUsSwiperItem item={item} />
                 </SwiperSlide>
               );
             })}

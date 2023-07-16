@@ -8,7 +8,7 @@ import Services from "../Layouts/Services/Services";
 import NewService from "../Layouts/Services/NewServices";
 import BookTime from "../components/BookTIme/BookTime";
 import NumberDetails from "../components/NumberDetailItems/NumberDetails";
-import ChooseUs from "../components/ChooseUs/ChooseUs";
+import ChooseUs from "../Layouts/ChooseUs/ChooseUs";
 import OurTeam from "../Layouts/OurTeam/OurTeam";
 import CostumerComments from "../Layouts/CostumerComments/CostumerComments";
 
@@ -17,9 +17,7 @@ import Loading from "./Loading/Loading";
 import { useEffect } from "react";
 
 const Base = () => {
-  const { ActiveSearch, ActiveContactUs, loadingStatus, setLoadingStatus } =
-    UseStateContext();
-  const { ActiveMenu } = UseStateContext();
+  const { loadingStatus, setLoadingStatus } = UseStateContext();
 
   useEffect(() => {
     var timeout = setTimeout(() => {
@@ -34,11 +32,12 @@ const Base = () => {
     <section className="bg-main-color text-txt-color">
       {loadingStatus && <Loading />}
 
-      {ActiveMenu ? <ResponsiveMenu /> : <NavbarMenu />}
+      <ResponsiveMenu />
+      <NavbarMenu />
 
       <Header />
-      {ActiveSearch && <Search />}
-      {ActiveContactUs && <ContactUS />}
+      <Search />
+      <ContactUS />
 
       <AboutUs />
       <NumberDetails />

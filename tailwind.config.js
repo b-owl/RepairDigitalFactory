@@ -3,7 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      fontFamily: {},
+      fontFamily: {
+        TitrPlus: "TitrPlus",
+      },
       colors: {
         "main-color": "#001c30",
         "second-color": "#176b87",

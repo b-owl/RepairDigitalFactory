@@ -10,12 +10,12 @@ import { CostumerCommentsData } from "../../assets/dummy";
 const CostumerComments = () => {
   return (
     <section
-      className="w-5/6 flex flex-col mt-20 pt-10 pb-28 gap-14 mx-auto"
+      className="flex flex-col w-5/6 pt-10 mx-auto mt-20 pb-28 gap-14"
       id="Comments"
     >
-      <h1 className="relative text-4xl font-bold ">
-        <span className="absolute -top-3 -right-4 w-14 h-14 bg-second-color rounded-full "></span>
-        <p className="relative z-10">نظرات مشتریان</p>
+      <h1 className="relative text-2xl font-bold lg:text-4xl ">
+        <span className="absolute rounded-full -top-3 -right-4 w-14 h-14 bg-second-color "></span>
+        <p className="relative z-10 font-TitrPlus">نظرات مشتریان</p>
       </h1>
 
       <div className="w-full">

@@ -1,12 +1,10 @@
 .search--container {
-  transition: opacity 0.3s;
-  animation: opacity_transition 0.5s ease-in-out forwards;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
 }
-@keyframes opacity_transition {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.search--container-show {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
 }

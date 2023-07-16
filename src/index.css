@@ -2,12 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: TitrPlus;
+  src: url("./assets/fonts/TitrPlus.ttf");
+}
+@font-face {
+  font-family: BYekan;
+  src: url("./assets/fonts/BYekan.ttf");
+}
+
 :root {
-  font-family: sans-serif;
+  font-family: BYekan;
   line-height: 1.5;
   font-weight: 400;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,6 +42,12 @@ html {
 body {
   line-height: 1.5;
   overflow-x: hidden;
+  margin-bottom: 23rem;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    margin-bottom: 0;
+  }
 }
 img,
 picture,
@@ -81,4 +95,17 @@ a {
 }
 .swiper-button-prev {
   transform: rotate(180deg) !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: lightgray;
+  width: 0.8rem !important;
+  height: 0.8rem !important;
+  border-radius: 50%;
+  border-bottom: 0.15rem solid transparent !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: lightseagreen;
+  border-bottom: 0.15rem solid snow !important;
+  opacity: 1 !important;
 }

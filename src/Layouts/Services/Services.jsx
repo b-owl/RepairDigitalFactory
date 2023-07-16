@@ -17,7 +17,7 @@ const Services = () => {
       >
         <h1 className="relative mb-10 text-2xl font-bold md:3xl lg:text-4xl">
           <span className="absolute rounded-full -top-3 -right-4 w-14 h-14 bg-second-color "></span>
-          <p className="relative z-10">سرویس ها و خدمات</p>
+          <p className="relative z-10 font-TitrPlus">سرویس ها و خدمات</p>
         </h1>
 
         <div className="grid grid-cols-1 gap-12 p-4 pb-8 sm:grid-cols-2 lg:grid-cols-3 lg:p-16">

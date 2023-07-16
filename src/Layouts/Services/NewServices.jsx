@@ -11,9 +11,9 @@ import "swiper/css/effect-coverflow";
 const NewService = () => {
   return (
     <section className="w-5/6 mx-auto">
-      <h1 className="relative text-2xl md:3xl lg:text-4xl font-bold  mb-10 ">
-        <span className="absolute -top-3 -right-4 w-14 h-14 bg-second-color rounded-full "></span>
-        <p className="relative z-10">خدمات جدید</p>
+      <h1 className="relative mb-10 text-2xl font-bold md:3xl lg:text-4xl ">
+        <span className="absolute rounded-full -top-3 -right-4 w-14 h-14 bg-second-color "></span>
+        <p className="relative z-10 font-TitrPlus">خدمات جدید</p>
       </h1>
 
       <div className="w-full lg:p-8">

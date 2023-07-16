@@ -1,13 +1,20 @@
 .contactUs--container {
-  transition: 0.5s all;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
 }
+.contactUs--container-show {
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+}
+
 .contactUs--box {
+  transition: all 0.5s ease-in-out;
   transform: translateX(-100%);
-  animation: contactUs 0.5s ease-in-out forwards;
 }
-@keyframes contactUs {
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.contactUs--box-show {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
 }
