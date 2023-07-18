@@ -17,12 +17,14 @@ const AboutUs = () => {
       >
         <div className="basis-1/2 ">
           <h1 className="relative text-2xl font-bold md:text-3xl lg:text-4xl mb-14">
-            <span className="absolute rounded-full -top-4 -right-4 w-14 h-14 bg-second-color "></span>
-            <p className="relative z-10 font-TitrPlus">{AboutData.title}</p>
+            <span className="absolute rounded-full -top-4 -right-4 w-14 h-14 bg-third-color dark:bg-second-color "></span>
+            <div className="relative z-10 font-TitrPlus text-main-color dark:text-txt-color">
+              {AboutData?.title}
+            </div>
           </h1>
-          <p className="mt-6 text-sm leading-7 lg:text-base text-slate-400">
-            {AboutData.description}
-          </p>
+          <div className="mt-6 text-sm leading-7 lg:text-base text-slate-400">
+            {AboutData?.description}
+          </div>
         </div>
 
         <div className="mx-auto mt-20 w-72 lg:w-96 lg:mx-28">

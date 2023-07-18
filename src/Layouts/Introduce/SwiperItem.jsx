@@ -6,7 +6,7 @@ const SwiperItem = ({ prefix, title, description, href, imgSource, order }) => {
           <h3 className="mb-2 text-base font-semibold text-third-color lg:text-xl">
             {prefix}
           </h3>
-          <h1 className="text-4xl font-bold lg:text-5xl font-TitrPlus">{title}</h1>
+          <h1 className="text-4xl font-bold text-main-color dark:text-txt-color lg:text-5xl font-TitrPlus">{title}</h1>
           <p className="my-6 text-sm text-second-color lg:text-base">
             {description}
           </p>

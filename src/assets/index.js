@@ -12,6 +12,8 @@ export { default as commentPic1 } from "./images/comment1.jpg";
 export { default as commentPic2 } from "./images/comment2.jpg";
 export { default as commentPic3 } from "./images/comment3.jpg";
 
+export { default as Sun } from "./icons/sun.png";
+export { default as Moon } from "./icons/moon.png";
 export { default as InstagramIcon } from "./icons/instagram-icon.png";
 export { default as TelegramIcon } from "./icons/telegram-icon.png";
 export { default as WhatsappIcon } from "./icons/whatsapp-icon.png";

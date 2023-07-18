@@ -16,10 +16,10 @@ const BookTime = () => {
           <h1 className="text-2xl font-bold lg:text-4xl font-TitrPlus">
             {OnlineAppointment.title}
           </h1>
-          <p className="w-2/3 my-6 mt-12 text-sm leading-relaxed lg:text-sm lg:w-1/2 text-slate-200">
+          <p className="w-2/3 my-6 mt-12 text-sm leading-relaxed lg:text-sm lg:w-1/2 text-slate-700 dark:text-slate-200">
             {OnlineAppointment.description}
           </p>
-          <button className="p-2 px-4 text-base rounded-2xl bg-second-color hover:bg-third-color lg:text-md">
+          <button className="p-2 px-4 text-base rounded-2xl bg-third-color dark:bg-second-color hover:bg-second-color hover:text-txt-color dark:hover:bg-third-color lg:text-md">
             {OnlineAppointment.ButtonTxt}
           </button>
         </div>

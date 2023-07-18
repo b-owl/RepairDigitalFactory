@@ -12,7 +12,7 @@ const NewService = () => {
   return (
     <section className="w-5/6 mx-auto">
       <h1 className="relative mb-10 text-2xl font-bold md:3xl lg:text-4xl ">
-        <span className="absolute rounded-full -top-3 -right-4 w-14 h-14 bg-second-color "></span>
+        <span className="absolute rounded-full -top-3 -right-4 w-14 h-14 bg-third-color dark:bg-second-color "></span>
         <p className="relative z-10 font-TitrPlus">خدمات جدید</p>
       </h1>
 
@@ -24,7 +24,6 @@ const NewService = () => {
           centeredSlides="true"
           spaceBetween={0}
           slidesPerView={4}
-          // loop="true"
           pagination={{ clickable: true, dynamicBullets: true }}
           coverflowEffect={{
             rotate: 15,

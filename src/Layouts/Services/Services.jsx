@@ -16,7 +16,7 @@ const Services = () => {
         } w-full mx-auto py-10 px-8 md:px-28 pt-24 overflow-hidden`}
       >
         <h1 className="relative mb-10 text-2xl font-bold md:3xl lg:text-4xl">
-          <span className="absolute rounded-full -top-3 -right-4 w-14 h-14 bg-second-color "></span>
+          <span className="absolute rounded-full -top-3 -right-4 w-14 h-14 bg-third-color dark:bg-second-color "></span>
           <p className="relative z-10 font-TitrPlus">سرویس ها و خدمات</p>
         </h1>
 
@@ -36,9 +36,8 @@ const Services = () => {
 
       <div className="mx-auto text-center">
         <button
-          style={{ border: "0.6px solid snow" }}
           onClick={() => setReadMore((prev) => !prev)}
-          className="p-2 px-4 mt-4 mb-20 rounded-2xl border-txt-color text-txt-color hover:bg-second-color"
+          className="p-2 px-4 mt-4 mb-20 border-1 rounded-2xl dark:border-txt-color dark:text-txt-color bg-third-color dark:bg-transparent dark:hover:bg-second-color hover:bg-second-color hover:text-txt-color"
         >
           {ReadMore ? "خواندن بیشتر" : "خواندن کمتر"}
         </button>

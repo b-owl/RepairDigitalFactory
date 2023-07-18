@@ -29,7 +29,7 @@ const Base = () => {
   }, [loadingStatus, setLoadingStatus]);
 
   return (
-    <section className="bg-main-color text-txt-color">
+    <section className="bg-txt-color text-main-color dark:bg-main-color dark:text-txt-color">
       {loadingStatus && <Loading />}
 
       <ResponsiveMenu />

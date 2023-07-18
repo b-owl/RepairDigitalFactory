@@ -14,7 +14,7 @@ const CostumerComments = () => {
       id="Comments"
     >
       <h1 className="relative text-2xl font-bold lg:text-4xl ">
-        <span className="absolute rounded-full -top-3 -right-4 w-14 h-14 bg-second-color "></span>
+        <span className="absolute rounded-full -top-3 -right-4 w-14 h-14 bg-third-color dark:bg-second-color "></span>
         <p className="relative z-10 font-TitrPlus">نظرات مشتریان</p>
       </h1>
 
@@ -40,7 +40,7 @@ const CostumerComments = () => {
         >
           {CostumerCommentsData.map((item, idx) => {
             return (
-              <SwiperSlide key={idx} className="bg-main-color">
+              <SwiperSlide key={idx} className="bg-txt-color dark:bg-main-color">
                 <Comment
                   commentPic={item.bgSource}
                   name={item.name}

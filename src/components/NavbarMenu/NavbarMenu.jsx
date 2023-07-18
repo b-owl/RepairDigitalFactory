@@ -5,10 +5,11 @@ import { NavbarItems } from "../../assets/dummy";
 import Styles from "./NavbarMenu.module.css";
 
 const NavbarMenu = () => {
-  const { setActiveSearch, setActiveContactUs, setActiveMenu } = UseStateContext();
+  const { DarkMode, setTheme, setActiveSearch, setActiveContactUs, setActiveMenu } =
+    UseStateContext();
   return (
-    <nav className="flex flex-col w-full gap-4 pt-0 p-2 text-white lg:px-32 sticky top-0 left-0 z-40">
-      <div className="bg-slate-800 flex items-center justify-between p-2 border-gray-400 lg:px-10 lg:border-b-2">
+    <nav className="sticky top-0 left-0 z-40 flex flex-col w-full gap-4 p-2 pt-0 dark:text-txt-color text-main-color lg:px-32">
+      <div className="flex items-center justify-between p-2 border-gray-400 bg-third-color dark:bg-slate-800 lg:px-10 lg:border-b-2">
         <button
           className="hidden lg:block"
           onClick={() => {
@@ -18,8 +19,19 @@ const NavbarMenu = () => {
           <img className="w-8" src={ContactIcon} alt="contactIcon" />
         </button>
 
-        <div className="Logo w-32 lg:w-36">
-          <img src={Logo} alt="Logo" title="Logo" />
+        <div className="flex flex-col items-center justify-center w-28 Logo lg:w-36">
+          <img className="w-28" src={Logo} alt="Logo" title="Logo" />
+
+          <div className="hidden mt-2 ToggleTheme lg:block">
+            <input
+              className={`${Styles.ChangeTheme} hidden`}
+              id="checkbox"
+              type="checkbox"
+              checked={DarkMode}
+              onChange={setTheme}
+            />
+            <label className={Styles.LabelChangeTheme} htmlFor="checkbox"></label>
+          </div>
         </div>
 
         <button
@@ -42,7 +54,7 @@ const NavbarMenu = () => {
       </div>
 
       <ul
-        className={`${Styles.navbarUl} border-b-2 bg-slate-800 py-4 -mt-4 w-full justify-center gap-6 hidden lg:flex`}
+        className={`${Styles.navbarUl} border-b-2 bg-third-color dark:bg-slate-800 py-4 -mt-4 w-full justify-center gap-6 hidden lg:flex`}
       >
         {NavbarItems.map((item, idx) => {
           return <Link key={idx} name={item.name} href={item.href} />;

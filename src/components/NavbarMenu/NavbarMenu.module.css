@@ -1,3 +1,15 @@
 .navbarUl {
   clip-path: polygon(0 0, 100% 0, 81% 100%, 19% 100%);
 }
+
+.LabelChangeTheme {
+  width: 2rem;
+  height: 2rem;
+  background: url("../../assets/icons/moon.png") center/cover no-repeat;
+  display: block;
+  cursor: pointer;
+}
+
+.ChangeTheme:checked ~ .LabelChangeTheme {
+  background: url("../../assets/icons/sun.png") center/cover no-repeat;
+}

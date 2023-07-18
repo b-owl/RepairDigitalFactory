@@ -9,7 +9,7 @@ const TeamMember = ({ bgSource, name, position }) => {
     >
       <img className="object-cover w-full h-full opacity-8" src={bgSource} alt="" />
       <div
-        className={`${Styles.TeamMemberBox} py-5 px-4 w-11/12 flex flex-col gap-2 absolute -bottom-16 left-3 bg-txt-color rounded-t-lg
+        className={`${Styles.TeamMemberBox} py-5 px-4 w-11/12 flex flex-col gap-2 absolute -bottom-16 left-3 bg-emerald-200 dark:bg-txt-color rounded-t-lg
       `}
       >
         <h1 className="text-xl font-bold font-TitrPlus">{name}</h1>

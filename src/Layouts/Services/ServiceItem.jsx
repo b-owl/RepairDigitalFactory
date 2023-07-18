@@ -1,7 +1,7 @@
 const ServiceItem = ({ title, picSource, description }) => {
   return (
     <>
-      <div className="shadow-white rounded-xl p-4 gap-4 flex flex-col items-start justify-center border-[1px] border-b-2 hover:border-b-4 border-b-third-color h-80 ">
+      <div className="shadow-black dark:shadow-white shadow-sm rounded-xl p-4 gap-4 flex flex-col items-start justify-center border-[1px] border-b-2 hover:border-b-4 border-b-third-color h-80 ">
         <img
           className="w-2/3 mx-auto h-1/3"
           src={picSource}

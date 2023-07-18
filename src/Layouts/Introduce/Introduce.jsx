@@ -13,7 +13,7 @@ import { IntroduceData } from "../../assets/dummy";
 
 const Introduce = () => {
   return (
-    <section className="mt-10  text-txt-color lg:px-20">
+    <section className="mt-10 text-txt-color lg:px-20">
       <Swiper
         modules={[EffectFade, Navigation, Autoplay, A11y]}
         autoplay={{
@@ -26,7 +26,7 @@ const Introduce = () => {
       >
         {IntroduceData.map((item, idx) => {
           return (
-            <SwiperSlide key={idx} className="w-full bg-main-color">
+            <SwiperSlide key={idx} className="w-full bg-txt-color dark:bg-main-color">
               <SwiperItem
                 order={item.order}
                 imgSource={item.bgSource}

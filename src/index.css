@@ -98,14 +98,18 @@ a {
 }
 
 .swiper-pagination-bullet {
-  background-color: lightgray;
   width: 0.8rem !important;
   height: 0.8rem !important;
   border-radius: 50%;
   border-bottom: 0.15rem solid transparent !important;
 }
+.dark .swiper-pagination-bullet {
+  background-color: lightgray;
+}
 .swiper-pagination-bullet-active {
-  background-color: lightseagreen;
   border-bottom: 0.15rem solid snow !important;
   opacity: 1 !important;
+}
+.dark .swiper-pagination-bullet-active {
+  background-color: lightseagreen;
 }

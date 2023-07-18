@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bottom-0 left-0 lg:fixed -z-10">
       <section className="grid w-full grid-cols-1 gap-2 p-8 px-8 pb-8 leading-relaxed text-slate-300 bg-sky-900 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:px-14 lg:px-24 lg:p-16 ">
         <ul>
-          <h1 className="mt-4 mb-2 text-xl font-bold font-TitrPlus md:text-lg sm:mb-4 text-main-color md:mt-0">
+          <h1 className="mt-4 mb-2 text-xl font-bold font-TitrPlus md:text-lg sm:mb-4 text-third-color dark:text-main-color md:mt-0">
             دسترسی سریع تر
           </h1>
 
@@ -24,7 +24,7 @@ const Footer = () => {
         </ul>
 
         <div>
-          <h1 className="mt-4 mb-2 text-xl font-bold font-TitrPlus md:text-lg sm:mb-4 text-main-color md:mt-0">
+          <h1 className="mt-4 mb-2 text-xl font-bold font-TitrPlus md:text-lg sm:mb-4 text-third-color dark:text-main-color md:mt-0">
             شبکه های اجتماعی
           </h1>
           <p>میتوانید با دنبال کردن شبکه های اجتماعی با ما در ارتباط باشید </p>
@@ -36,7 +36,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col ">
-          <h1 className="mt-4 mb-2 text-xl font-bold font-TitrPlus md:text-lg sm:mb-4 text-main-color md:mt-0">
+          <h1 className="mt-4 mb-2 text-xl font-bold font-TitrPlus md:text-lg sm:mb-4 text-third-color dark:text-main-color md:mt-0">
             ادرس و تلفن شرکت
           </h1>
           <p>
